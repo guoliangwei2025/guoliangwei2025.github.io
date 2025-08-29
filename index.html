@@ -470,7 +470,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2025-08-29 09:37:39 / 修改时间：15:24:35" itemprop="dateCreated datePublished" datetime="2025-08-29T09:37:39+08:00">2025-08-29</time>
+      <time title="创建时间：2025-08-29 09:37:39 / 修改时间：15:26:11" itemprop="dateCreated datePublished" datetime="2025-08-29T09:37:39+08:00">2025-08-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -520,7 +520,7 @@
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">twoSum</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>], target: <span class="built_in">int</span></span>) -&gt; <span class="type">List</span>[<span class="built_in">int</span>]:</span><br><span class="line">        <span class="comment">#定义哈希表 如果 target-当前元素不在哈希表中 就加入哈希表 </span></span><br><span class="line">        t = &#123;&#125;</span><br><span class="line">        <span class="keyword">for</span> i,num <span class="keyword">in</span> <span class="built_in">enumerate</span>(nums):</span><br><span class="line">            <span class="keyword">if</span> target-num <span class="keyword">in</span> t:</span><br><span class="line">                <span class="keyword">return</span> [t[target-num],i]</span><br><span class="line">            t[num] = i</span><br><span class="line">        <span class="keyword">return</span> </span><br></pre></td></tr></table></figure>
 
-<h1 id="字母异位词分组"><a href="#字母异位词分组" class="headerlink" title="字母异位词分组"></a>字母异位词分组</h1><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/group-anagrams/">49. 字母异位词分组</a></p>
+<h1 id="字母异位词分组（49）"><a href="#字母异位词分组（49）" class="headerlink" title="字母异位词分组（49）"></a>字母异位词分组（49）</h1><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/group-anagrams/">49. 字母异位词分组</a></p>
 <blockquote>
 <p>给你一个字符串数组，请你将字母异位词组合在一起。可以按任意顺序返回结果列表。</p>
 </blockquote>
@@ -532,7 +532,7 @@
 <p>②计数，定义数组计算每个字符串字母出现的个数，组成字母异位词的字符个数是相等的，但是列表是可变的所以不能哈希，需要转化成元组才能哈希</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">groupAnagrams</span>(<span class="params">self, strs: <span class="type">List</span>[<span class="built_in">str</span>]</span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">str</span>]]:</span><br><span class="line">        mp = defaultdict(<span class="built_in">list</span>)  <span class="comment"># 创建哈希表，value 默认是列表</span></span><br><span class="line">        <span class="keyword">for</span> st <span class="keyword">in</span> strs:</span><br><span class="line">            counts = [<span class="number">0</span>]*<span class="number">26</span></span><br><span class="line">            <span class="keyword">for</span> ch <span class="keyword">in</span> st:</span><br><span class="line">                counts[<span class="built_in">ord</span>(ch)-<span class="built_in">ord</span>(<span class="string">&quot;a&quot;</span>)] += <span class="number">1</span></span><br><span class="line">            mp[<span class="built_in">tuple</span>(counts)].append(st)</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">list</span>(mp.values())       <span class="comment"># 返回所有分组</span></span><br></pre></td></tr></table></figure>
 
-<h1 id="最长连续序列"><a href="#最长连续序列" class="headerlink" title="最长连续序列"></a>最长连续序列</h1><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/longest-consecutive-sequence/">128. 最长连续序列</a></p>
+<h1 id="最长连续序列（128）"><a href="#最长连续序列（128）" class="headerlink" title="最长连续序列（128）"></a>最长连续序列（128）</h1><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/longest-consecutive-sequence/">128. 最长连续序列</a></p>
 <blockquote>
 <p>给定一个未排序的整数数组 <code>nums</code> ，找出数字连续的最长序列（不要求序列元素在原数组中连续）的长度。</p>
 </blockquote>
