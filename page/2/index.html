@@ -102,7 +102,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">12</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">9</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">18</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">13</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">10</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">19</span></a></li>
   </ul>
 </nav>
 
@@ -141,18 +141,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-count">19</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -174,6 +174,122 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://guoliangwei2025.github.io/2025/08/28/python-%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/bk.jpg">
+      <meta itemprop="name" content="glw">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GuoLiangWei">
+      <meta itemprop="description" content="心有所向，无问东西">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | GuoLiangWei">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2025/08/28/python-%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86/" class="post-title-link" itemprop="url">python 依赖管理</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-08-28 09:34:52 / 修改时间：15:49:00" itemprop="dateCreated datePublished" datetime="2025-08-28T09:34:52+08:00">2025-08-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>954</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+<p>本文主要介绍python中虚拟环境管理的另一种方式uv，开始接触深度学习conda用得比较多，后面发现有的项目是用uv进行环境管理，因此简单介绍一下这种方式。我的理解就是conda和uv都可以用来创建虚拟环境，如果是深度学习项目可使用conda建立虚拟环境，uv来下载依赖。其余的如web项目都可以使用uv来建立环境来进行管理依赖</p>
+</blockquote>
+<h1 id="Python-uv虚拟环境管理"><a href="#Python-uv虚拟环境管理" class="headerlink" title="Python-uv虚拟环境管理"></a>Python-uv虚拟环境管理</h1><h2 id="uv简介"><a href="#uv简介" class="headerlink" title="uv简介"></a>uv简介</h2><p>uv和conda一样是python中的包管理工具，与其他Python中的包管理工具相比，uv更像是一个全能选手，有以下优势：</p>
+<ul>
+<li>速度快</li>
+<li>统一管理 Python 版本</li>
+<li>自动解决依赖冲突</li>
+<li>跨平台一致性</li>
+</ul>
+<p>uv工具主要使用的两个文件：</p>
+<p><code>pyproject.toml</code>：定义项目的主要依赖，包括项目名称、版本、描述、支持的 Python 版本等信息<br><code>uv.lock</code>：记录项目的所有依赖，包括依赖的依赖，且跨平台，确保在不同环境下安装的一致性。由 uv 自动管理，不用手动编辑</p>
+<h2 id="uv安装"><a href="#uv安装" class="headerlink" title="uv安装"></a>uv安装</h2><blockquote>
+<p>主要介绍在windows uv的安装，以及uv建立虚拟环境，下载依赖</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># On Windows.</span></span><br><span class="line">powershell -ExecutionPolicy ByPass -c <span class="string">&quot;irm https://astral.sh/uv/install.ps1 | iex&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># With pip.</span></span><br><span class="line">pip install uv</span><br></pre></td></tr></table></figure>
+
+<h2 id="uv使用"><a href="#uv使用" class="headerlink" title="uv使用"></a>uv使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建指定 Python 版本的环境</span></span><br><span class="line">uv venv --python=3.11 myenv</span><br><span class="line"><span class="comment"># 从 requirements.txt 安装（带哈希校验！）</span></span><br><span class="line">uv pip install -r requirements.txt</span><br><span class="line"><span class="comment"># 生成精简版依赖</span></span><br><span class="line">uv pip compile requirements.in -o requirements.txt</span><br><span class="line"><span class="comment"># 查看当前环境已安装的依赖</span></span><br><span class="line">uv pip list</span><br><span class="line"><span class="comment">#安装依赖并写入 pyproject.toml</span></span><br><span class="line">uv add requests </span><br><span class="line"><span class="comment">#移除依赖</span></span><br><span class="line">uv remove requests </span><br><span class="line"><span class="comment">#同步依赖到虚拟环境</span></span><br><span class="line">uv <span class="built_in">sync</span> </span><br><span class="line"><span class="comment">#导出 lock 文件为 requirements.txt 等格式</span></span><br><span class="line">uv <span class="built_in">export</span> </span><br><span class="line"><span class="comment">#构建源码包和 wheel</span></span><br><span class="line">uv build发布到 PyPI </span><br><span class="line"><span class="comment">#发布到 PyPI</span></span><br><span class="line">uv publish </span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43548590/article/details/149726124">uv安装并设置镜像</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/wang_yb/p/18635441">uv使用</a></p>
+<h1 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43684214/article/details/145588364">python环境管理大比拼</a></p>
+<p><a target="_blank" rel="noopener" href="https://zxj-2023.github.io/2025/08/02/%E5%AD%A6%E4%B9%A0/%E6%9D%82%E9%A1%B9/python-uv%E5%8C%85%E7%AE%A1%E7%90%86/">uv管理</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1398,14 +1514,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">27k</span>
+    <span title="站点总字数">29k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">25 分钟</span>
+    <span title="站点阅读时长">26 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
